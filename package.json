@@ -65,7 +65,7 @@
     "benchmark": "NODE_ENV=production node benchmark/test.js",
     "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --source-maps",
     "lint": "eslint ./src && flow",
-    "precommit": "npm run test && npm run lint",
+    "preinstall": "npm run build",
     "test": "NODE_ENV=development ava --verbose"
   },
   "version": "1.0.2"
